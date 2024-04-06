@@ -4,8 +4,6 @@ import {
   Breadcrumbs,
   Link,
   Typography,
-  List,
-  ListItem,
   Button,
   TextField,
 } from "@material-ui/core";
@@ -48,7 +46,7 @@ const Login = () => {
     <div className={classes.loginWrapper}>
       <div className="login-page-wrapper">
         <div className="container">
-          {/* <Breadcrumbs
+         <Breadcrumbs
             separator="›"
             aria-label="breadcrumb"
             className="breadcrumb-wrapper"
@@ -57,36 +55,13 @@ const Login = () => {
               Home
             </Link>
             <Typography color="textPrimary">Login</Typography>
-          </Breadcrumbs> */}
-          <center><Typography variant="h4">Login</Typography></center><br/><br/>
+          </Breadcrumbs> 
+          <Typography variant="h1">Login or Create an Account</Typography>
           <div className="login-row">
-            {/* <div className="content-col"> */}
-              {/* <div className="top-content"> */}
-                {/* <Typography variant="h2">New Customer</Typography>
-                <p>Registration is free and easy.</p>
-                <List className="bullet-list">
-                  <ListItem>Faster checkout</ListItem>
-                  <ListItem>Save multiple shipping addresses</ListItem>
-                  <ListItem>View and track orders and more</ListItem>
-                </List> */}
-              {/* </div> */}
-              {/* <div className="btn-wrapper">
-                <Button
-                  className="pink-btn btn"
-                  variant="contained"
-                  color="primary"
-                  disableElevation
-                  onClick={() => {
-                    navigate("/register");
-                  }}
-                >
-                  Create an Account
-                </Button>
-              </div> */}
-            {/* </div> */}
+            
             <div className="content-col">
-              {/* <Typography variant="h2">Registered Customers</Typography>
-              <p>If you have an account with us, please log in.</p> */}
+               <Typography variant="h2">Registered Customers</Typography>
+              <p>If you have an account with us, please log in.</p> 
               <Formik
                 initialValues={initialValues}
                 validationSchema={validationSchema}
@@ -136,13 +111,14 @@ const Login = () => {
                         />
                       </div>
                       <div className="btn-wrapper">
-                        <Button
-                          type="submit"
-                          className="pink-btn btn"
-                          variant="contained"
-                          color="primary"
-                          disableElevation
-                        >
+                      <Button
+                        type="submit"
+                        className="blue-btn btn"
+                        variant="contained"
+                        color="primary"
+                        disableElevation
+                        style={{ backgroundColor: 'lightblue' }}
+                      >
                           Login
                         </Button>
                       </div>

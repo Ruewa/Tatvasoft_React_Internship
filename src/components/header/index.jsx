@@ -4,9 +4,9 @@ import { headerStyle } from "./style";
 import List from "@material-ui/core/List";
 import AppBar from "@material-ui/core/AppBar";
 import ListItem from "@material-ui/core/ListItem";
-// import siteLogo from "../../assets/images/site-logo.svg";
-// import cartIcon from "../../assets/images/cart.png";
-// import searchIcon from "../../assets/images/search.png";
+ import siteLogo from "../../assets/images/site-logo.png";
+ import cartIcon from "../../assets/images/cart.png";
+ import searchIcon from "../../assets/images/search.png";
 import { TextField, Button } from "@material-ui/core";
 import Shared from "../../utils/shared";
 import { useAuthContext } from "../../context/auth";
@@ -20,7 +20,7 @@ const Header = () => {
   const classes = headerStyle();
   const authContext = useAuthContext();
   const cartContext = useCartContext();
-  // const [open, setOpen] = useState(false);
+  
   const open = false;
   const [query, setquery] = useState("");
   const [bookList, setbookList] = useState([]);
@@ -28,7 +28,7 @@ const Header = () => {
 
   const navigate = useNavigate();
 
-  // for mobile menu
+  
   const openMenu = () => {
     document.body.classList.toggle("open-menu");
   };
@@ -83,23 +83,14 @@ const Header = () => {
           <div className="container">
             <div className="header-wrapper">
               <div className="logo-wrapper">
-                {/* <Link to="/" className="site-logo" title="logo">
+                 <Link to="/" className="site-logo" title="logo">
                   <img src={siteLogo} alt="logo" />
-                </Link> */}
+                </Link> 
               </div>
               <div className="nav-wrapper">
                 <div className="top-right-bar">
                   <List className="top-nav-bar">
-                  {/* <List className="top-nav-bar">
-                      <ListItem>
-                        <Link to={RoutePaths.Book} title="Books"> ____Books____ </Link>
-                      </ListItem>
-                  </List>
-                  <List className="top-nav-bar">
-                      <ListItem>
-                        <Link to={RoutePaths.EditBook} title="Edit Books">  Edit Book____ </Link>
-                      </ListItem>
-                  </List> */}
+                 
                     {!authContext.user.id && (
                       <>
                         <ListItem>
@@ -123,19 +114,13 @@ const Header = () => {
                     ))}
                   </List>
 
-                  {/* {authContext.user.id && (
-                    <List className="top-nav-bar">
-                    <ListItem>
-                      <Link to={RoutePaths.EditBook} title="Edit Books">Edit Books</Link>
-                    </ListItem>
-                    </List>
-                  )} */}
+                  
                   
                   {authContext.user.id && (
                   <List className="cart-country-wrap">
                     <ListItem className="cart-link">
                       <Link to="/cart" title="Cart">
-                        {/* <img src={cartIcon} alt="cart.png" /> */}
+                         <img src={cartIcon} alt="cart.png" /> 
                         <span>{cartContext.cartData.length}</span>
                         Cart
                       </Link>
@@ -187,7 +172,7 @@ const Header = () => {
                           <p className="no-product">No product found</p>
                         )}
 
-                        {/* <p className="loading">Loading....</p> */}
+                       
                         <List className="related-product-list">
                           {bookList?.length > 0 &&
                             bookList.map((item, i) => {
@@ -223,9 +208,9 @@ const Header = () => {
                   disableElevation
                   onClick={search}
                 >
-                  {/* <em>
+                   <em>
                     <img src={searchIcon} alt="search" />
-                  </em> */}
+                  </em> 
                   Search
                 </Button>
               </div>

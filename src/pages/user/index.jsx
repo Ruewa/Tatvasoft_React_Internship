@@ -80,7 +80,7 @@ const User = () => {
   return (
     <div className={classes.productWrapper}>
       <div className="container">
-        <Typography variant="h1">User</Typography>
+        <center><Typography variant="h4">User</Typography></center><br/><br/>
         <div className="btn-wrapper">
           <TextField
             id="text"
@@ -118,7 +118,7 @@ const User = () => {
                   <TableCell>
                     <Button
                       type="button"
-                      className="green-btn btn"
+                      className="pink-btn btn"
                       variant="contained"
                       color="primary"
                       disableElevation

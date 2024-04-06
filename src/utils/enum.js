@@ -15,7 +15,7 @@ export const RoutePaths = {
   };
   
   export const Role = {
-    Admin: 1,
+    Admin: 3,
     Seller: 2,
     Buyer: 3,
   };

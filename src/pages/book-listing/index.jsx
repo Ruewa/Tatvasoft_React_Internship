@@ -149,17 +149,17 @@ const BookList = () => {
             {books.map((book, index) => (
               <div className="product-list" key={index}>
                 <div className="product-list-inner">
-                  {/* <em>
+                  <em>
                     <img
                       src={book.base64image}
                       className="image"
                       alt="dummyimage"
                     />
-                  </em> */}
+                  </em>
                   <div className="content-wrapper">
                     <Typography variant="h3">{book.name}</Typography>
-                    {/* <span className="category">{book.category}</span> */}
-                    {/* <p className="description">{book.description}</p> */}
+                     <span className="category">{book.category}</span>
+                     <p className="description">{book.description}</p> 
                     <p className="price">
                       <span className="discount-price">
                         Rs. {book.price}

@@ -59,7 +59,7 @@ const Category = () => {
   return (
     <div className={classes.productWrapper}>
       <div className="container">
-        <Typography variant="h1">Category</Typography>
+      <center><Typography variant="h4">Category</Typography></center><br/><br/>
         <div className="btn-wrapper">
           <TextField
             id="text"
@@ -104,7 +104,7 @@ const Category = () => {
                   <TableCell>
                     <Button
                       type="button"
-                      className="green-btn btn"
+                      className="pink-btn btn"
                       variant="contained"
                       color="primary"
                       disableElevation

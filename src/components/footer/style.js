@@ -4,7 +4,7 @@ import { colors } from "../../constant/constant";
 const footerStyle = makeStyles((theme) => ({
   footerWrapper: {
     "& .site-footer": {
-      backgroundColor: "#f9f9f9",
+      backgroundColor: "#959595",
       padding: "49px 0",
       "@media (max-width: 991px)": {
         padding: "40px 0",

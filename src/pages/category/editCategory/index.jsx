@@ -46,7 +46,7 @@ const EditCategory = () => {
   return (
     <div className={classes.editWrapper}>
       <div className="container">
-        <Typography variant="h1">{id ? "Edit" : "Add"} Category</Typography>
+        <center><Typography variant="h4">{id ? "Edit" : "Add"} Category</Typography></center><br/><br/>
         <Formik
           initialValues={initialValueState}
           validationSchema={validationSchema}
@@ -82,7 +82,7 @@ const EditCategory = () => {
               </div>
               <div className="btn-wrapper">
                 <Button
-                  className="green-btn btn"
+                  className="pink-btn btn"
                   variant="contained"
                   type="submit"
                   color="primary"

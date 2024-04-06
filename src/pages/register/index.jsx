@@ -1,3 +1,8 @@
+// admin@tatvasoft.com
+// admin@123
+
+
+
 import React, { useEffect, useState } from "react";
 import { createAccountStyle } from "./style";
 import {
@@ -74,7 +79,7 @@ const Register = () => {
     <div className={classes.createAccountWrapper}>
       <div className="create-account-page-wrapper">
         <div className="container">
-          {/* <Breadcrumbs
+           <Breadcrumbs
             separator="›"
             aria-label="breadcrumb"
             className="breadcrumb-wrapper"
@@ -83,9 +88,9 @@ const Register = () => {
               Home
             </Link>
             <Typography color="textPrimary">Create an Account</Typography>
-          </Breadcrumbs> */}
+          </Breadcrumbs> 
 
-          <center><Typography variant="h4">Create An Account</Typography></center><br/><br/>
+          <Typography variant="h1">Login or Create an Account</Typography>
           <div className="create-account-row">
             <Formik
               initialValues={initialValues}
@@ -103,11 +108,7 @@ const Register = () => {
                 <form onSubmit={handleSubmit}>
                   <div className="form-block">
                     <div className="personal-information">
-                      {/* <Typography variant="h2">Personal Information</Typography>
-                      <p>
-                        Please enter the following information to create your
-                        account.
-                      </p> */}
+                      
                       <div className="form-row-wrapper">
                         <div className="form-col">
                           <TextField
@@ -188,7 +189,7 @@ const Register = () => {
                       </div>
                     </div>
                     <div className="login-information">
-                      {/* <Typography variant="h2">Login Information</Typography> */}
+                      <Typography variant="h2">Login Information</Typography> 
 
                       <div className="form-row-wrapper">
                         <div className="form-col">
@@ -225,14 +226,15 @@ const Register = () => {
                         </div>
                       </div>
                       <div className="btn-wrapper">
-                        <Button
-                          className="pink-btn btn"
-                          variant="contained"
-                          type="submit"
-                          color="primary"
-                          disableElevation
-                        >
-                          Create An Account
+                      <Button
+                        type="submit"
+                        className="blue-btn btn"
+                        variant="contained"
+                        color="primary"
+                        disableElevation
+                        style={{ backgroundColor: 'lightblue' }}
+                      >
+                          Register
                         </Button>
                       </div>
                     </div>

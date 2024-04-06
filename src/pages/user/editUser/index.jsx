@@ -104,7 +104,7 @@ const EditUser = () => {
   return (
     <div className={classes.editUserWrapper}>
       <div className="container">
-        <Typography variant="h1">Edit User</Typography>
+        <center><Typography variant="h4">Edit User</Typography></center><br/><br/>
         <Formik
           initialValues={initialValueState}
           validationSchema={validationSchema}
@@ -202,7 +202,7 @@ const EditUser = () => {
               </div>
               <div className="btn-wrapper">
                 <Button
-                  className="green-btn btn"
+                  className="pink-btn btn"
                   variant="contained"
                   type="submit"
                   color="primary"

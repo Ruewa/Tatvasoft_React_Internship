@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { footerStyle } from "./style";
-// import siteLogo from "../../assets/images/site-logo.svg";
+ import siteLogo from "../../assets/images/site-logo.png";
 
 const Footer = () => {
   const classes = footerStyle();
@@ -12,9 +12,9 @@ const Footer = () => {
           <div className="container">
             <div className="text-center">
               <div className="footer-logo">
-                {/* <Link to="/" title="logo">
+                 <Link to="/" title="logo">
                   <img src={siteLogo} alt="sitelogo" />
-                </Link> */}
+                </Link> 
               </div>
               <p className="copyright-text">
                 © MyBookStore All rights reserved.
